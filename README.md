@@ -36,7 +36,6 @@ Follow these steps to set up the project locally:
 3. Install dependencies for the backend:
 
    ```bash
-   cd server
    npm install
    ```
 
@@ -47,7 +46,7 @@ Follow these steps to set up the project locally:
    npm install
    ```
 
-5. Create a `.env` file in the `server` directory and add the following:
+5. Create a `.env` file in the main directory and add the following:
 
    ```env
    MONGO_URI=your_mongodb_connection_string
@@ -55,18 +54,10 @@ Follow these steps to set up the project locally:
    PORT=your_port_number
    ```
 
-6. Start the backend server:
+6. Start the backend and frontend server simultaneously:
 
    ```bash
-   cd server
-   npm start
-   ```
-
-7. Start the frontend development server:
-
-   ```bash
-   cd ../client
-   npm start
+   npm run dev
    ```
 
 8. Open your browser and go to `http://localhost:3000`.
@@ -76,8 +67,11 @@ Follow these steps to set up the project locally:
 ```
 chat-app/
   ├── client/          # React.js frontend
-  ├── server/          # Node.js backend
+  ├── backend/          # Node.js backend
   ├── README.md        # Project documentation
+  ├── .env              # environment variables
+  ├── node_modules
+  ├── package.json
 ```
 
 ## Contribution
